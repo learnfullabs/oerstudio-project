@@ -1,0 +1,25 @@
+<?php
+/**
+ * @file
+ * Theme functions
+ */
+
+// Include all files from the includes directory.
+$includes_path = dirname(__FILE__) . '/includes/*.inc';
+foreach (glob($includes_path) as $filename) {
+  require_once dirname(__FILE__) . '/includes/' . basename($filename);
+}
+
+
+/**
+ * @param array $suggestions
+ * @param array $variables
+ * @param $hook
+ */
+function learnful_studio_theme_suggestions_fieldset_alter(array &$suggestions, array $variables, $hook)
+{
+    if (isset($variables['element']['#id'])) {
+        $id = str_replace("-", "_", $variables['element']['#id']);
+        $suggestions[] = $hook . '__' . $id;
+    }
+}

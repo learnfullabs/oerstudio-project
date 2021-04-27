@@ -1,0 +1,56 @@
+$h5p_types: (
+  "Accordion": "../icons/h5p/Accordion.svg",
+  "Advent Calendar": "../icons/h5p/AdventCalendar.svg",
+  "Agamotto": "../icons/h5p/Agamotto.svg",
+  "Arithmetic Quiz": "../icons/h5p/ArithmeticQuiz.svg",
+  "Audio Recorder": "../icons/h5p/AudioRecorder.svg",
+  "Blanks": "../icons/h5p/Blanks.svg",
+  "Branching Question": "../icons/h5p/BranchingQuestion.svg",
+  "Branching Scenario": "../icons/h5p/BranchingScenario.svg",
+  "Chart": "../icons/h5p/Chart.svg",
+  "Collage": "../icons/h5p/Collage.svg",
+  "Course Presentation": "../icons/h5p/CoursePresentation.svg",
+  "Dialogcards": "../icons/h5p/Dialogcards.svg",
+  "Dictation": "../icons/h5p/Dictation.svg",
+  "Documentation Tool": "../icons/h5p/DocumentationTool.svg",
+  "Drag Question": "../icons/h5p/DragQuestion.svg",
+  "Drag Text": "../icons/h5p/DragText.svg",
+  "Essay": "../icons/h5p/Essay.svg",
+  "Find The Words": "../icons/h5p/FindTheWords.svg",
+  "Flashcards": "../icons/h5p/Flashcards.svg",
+  "Guess The Answer": "../icons/h5p/GuessTheAnswer.svg",
+  "iFrame Embed": "../icons/h5p/IFrameEmbed.svg",
+  "Image Hotspot Question": "../icons/h5p/ImageHotspotQuestion.svg",
+  "Image Hotspots": "../icons/h5p/ImageHotspots.svg",
+  "Image Pair": "../icons/h5p/ImagePair.svg",
+  "Image Sequencing": "../icons/h5p/ImageSequencing.svg",
+  "Image Slider": "../icons/h5p/ImageSlider.svg",
+  "Interactive Book": "../icons/h5p/InteractiveBook.svg",
+  "Interactive Video": "../icons/h5p/InteractiveVideo.svg",
+  "KewAr Code": "../icons/h5p/KewArCode.svg",
+  "Mark The Words": "../icons/h5p/MarkTheWords.svg",
+  "Memory Game": "../icons/h5p/MemoryGame.svg",
+  "Multi Choice": "../icons/h5p/MultiChoice.svg",
+  "Questionnaire": "../icons/h5p/Questionnaire.svg",
+  "Question Set": "../icons/h5p/QuestionSet.svg",
+  "Speak The Words": "../icons/h5p/SpeakTheWords.svg",
+  "Speak The Words Set": "../icons/h5p/SpeakTheWordsSet.svg",
+  "Summary": "../icons/h5p/Summary.svg",
+  "Three Image": "../icons/h5p/ThreeImage.svg",
+  "Timeline": "../icons/h5p/Timeline.svg",
+  "True False": "../icons/h5p/TrueFalse.svg",
+  "Twitter User Feed": "../icons/h5p/TwitterUserFeed.svg",  
+);
+
+span[data-h5p-type] {
+  font-size: 0;
+  display: block;
+  height: 56px;
+  width: 100px;
+}
+
+@each $type, $bg in $h5p_types {
+  span[data-h5p-type="#{$type}"] {
+    background-image: url($bg);
+  }
+}

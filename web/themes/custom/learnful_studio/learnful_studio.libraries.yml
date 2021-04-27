@@ -1,0 +1,10 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/learnful_studio.style.css: {}
+  js:
+    assets/js/learnful_studio.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

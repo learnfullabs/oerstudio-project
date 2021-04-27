@@ -1,0 +1,40 @@
+name: Learnful Studio
+description: A theme based on Radix.
+screenshot: screenshot.png
+core_version_requirement: ^8.7.7 || ^9.0
+# version: VERSION
+engine: twig
+type: theme
+base theme: radix
+
+regions:
+  outer_sidebar_left: Outer Sidebar Left
+  navbar_branding: Navbar branding
+  navbar_left:  Navbar left
+  navbar_right: Navbar right
+  header: Header
+  content: Content
+  sidebar_left: Sidebar Left
+  sidebar_right: Sidebar Right
+  page_bottom: Page bottom
+  footer: Footer
+
+libraries:
+  - radix/style
+  - learnful_studio/style
+
+libraries-override:
+  radix/bootstrap: false
+
+ckeditor_stylesheets:
+  - assets/css/learnful_studio.style.css
+
+component-libraries:
+  learnful_studio:
+    paths:
+      - ./src/components
+
+# Information added by Drupal.org packaging script on 2020-09-30
+version: '8.x-4.10'
+project: 'radix'
+datestamp: 1601449011
