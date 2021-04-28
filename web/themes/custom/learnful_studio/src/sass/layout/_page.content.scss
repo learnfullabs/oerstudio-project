@@ -13,4 +13,6 @@
 #sidebar_left,
 #sidebar_right {
   width: 20rem;
+  height: calc(100vh - 57.71px);
+  overflow-y: auto;
 }

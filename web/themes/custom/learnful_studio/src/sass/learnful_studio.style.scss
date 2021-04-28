@@ -49,9 +49,15 @@
 @import "layout/page.content";
 @import "layout/page.footer";
 
+// Nav
+// -----------------------------------------------------------------------------
+@import "nav/mainnav";
+
 // Views
 // -----------------------------------------------------------------------------
 @import "views/h5p";
+@import "views/filters";
+
 
 // Component
 // -----------------------------------------------------------------------------
@@ -62,3 +68,4 @@
 @import "block/block";
 @import "content/node.page";
 @import "content/node.article";
+@import "content/page.title";

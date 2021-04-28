@@ -20,7 +20,7 @@
     placement: 'sticky-top',
     container: 'fluid',
     color: 'light',
-    utility_classes: ['bg-white shadow-lg'],
+    utility_classes: ['bg-white shadow-sm'],
   } %}
 
     {% block branding %}
@@ -64,7 +64,7 @@
     </main>
 
     {% if page.sidebar_left %}
-      <aside id="sidebar_left" class="order-0">
+      <aside id="sidebar_left" class="order-0 py-4 shadow-lg">
         <div class="sidebar__left px-3">
           {{ page.sidebar_left }}
         </div>

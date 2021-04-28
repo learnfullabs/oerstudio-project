@@ -9583,6 +9583,12 @@ a.text-dark:hover, a.text-dark:focus {
 #sidebar_left,
 #sidebar_right {
   width: 20rem;
+  height: calc(100vh - 57.71px);
+  overflow-y: auto;
+}
+
+.block--mainnavigation .nav > li.nav-item {
+  margin-right: 0.5em;
 }
 
 span[data-h5p-type] {
@@ -9754,4 +9760,46 @@ span[data-h5p-type="True False"] {
 
 span[data-h5p-type="Twitter User Feed"] {
   background-image: url("../icons/h5p/TwitterUserFeed.svg");
+}
+
+.views-exposed-form.block form > .form-item {
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 1rem;
+}
+
+.views-exposed-form.block form > .form-item > label {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/**
+* auto complete
+*/
+.js input.form-autocomplete {
+  background-position: 97% center;
+}
+
+.ui-autocomplete li > a {
+  display: block;
+}
+
+.ui-autocomplete li > a:hover,
+.ui-autocomplete li > a:focus {
+  text-decoration: none;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+  border: 1px solid #003eff;
+  background: white;
+  color: #003eff;
+}
+
+.block--learnful-studio-page-title h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
