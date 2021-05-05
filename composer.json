@@ -31,6 +31,7 @@
         "drupal/flag": "^4.0@beta",
         "drupal/flag_lists": "^4.0@beta",
         "drupal/gin": "^3.0@alpha",
+        "drupal/gin_login": "^1.0@RC",
         "drupal/h5p": "^1.0@RC",
         "drupal/pathauto": "^1.8",
         "drupal/private_content": "^2.0@RC",

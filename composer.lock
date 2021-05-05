@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2e2ed088d6d2958bc41a642faf8a1f8",
+    "content-hash": "c8c8d33a8f6ac7527bb7fe933251a1ac",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3414,6 +3414,69 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/gin",
                 "issues": "https://www.drupal.org/project/issues/gin"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/sponsors/saschaeggi"
+                },
+                {
+                    "type": "other",
+                    "url": "https://paypal.me/saschaeggi"
+                }
+            ]
+        },
+        {
+            "name": "drupal/gin_login",
+            "version": "1.0.0-rc7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/gin_login.git",
+                "reference": "8.x-1.0-rc7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/gin_login-8.x-1.0-rc7.zip",
+                "reference": "8.x-1.0-rc7",
+                "shasum": "8ed1d3ba09fbc4377d040bd9ea4d8c9cb7fb8006"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc7",
+                    "datestamp": "1606328781",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sascha Eggenberger (saschaeggi)",
+                    "homepage": "https://www.drupal.org/u/saschaeggi",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "saschaeggi",
+                    "homepage": "https://www.drupal.org/user/1999056"
+                }
+            ],
+            "description": "Custom Drupal Login for Gin theme",
+            "homepage": "https://www.drupal.org/project/gin_login",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/gin_login",
+                "issues": "https://www.drupal.org/project/issues/gin_login"
             },
             "funding": [
                 {
@@ -8774,6 +8837,7 @@
         "drupal/flag": 10,
         "drupal/flag_lists": 10,
         "drupal/gin": 15,
+        "drupal/gin_login": 5,
         "drupal/h5p": 5,
         "drupal/private_content": 5
     },
