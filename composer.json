@@ -24,6 +24,7 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/devel": "^4.1",
         "drupal/domain_registration": "^1.4",
         "drupal/ds": "^3.12",
         "drupal/email_registration": "^1.1",

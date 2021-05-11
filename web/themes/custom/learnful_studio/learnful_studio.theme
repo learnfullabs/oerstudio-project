@@ -23,3 +23,7 @@ function learnful_studio_theme_suggestions_fieldset_alter(array &$suggestions, a
         $suggestions[] = $hook . '__' . $id;
     }
 }
+
+function learnful_studio_preprocess_html(&$variables) {
+  //dpm($variables);
+}

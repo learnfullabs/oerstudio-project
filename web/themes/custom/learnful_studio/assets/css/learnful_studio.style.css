@@ -9575,6 +9575,11 @@ a.text-dark:hover, a.text-dark:focus {
   visibility: hidden !important;
 }
 
+body.path-node .page__header {
+  border-bottom: 1px solid #dee2e6;
+  padding: 0.5em;
+}
+
 #outer_sidebar_left {
   height: 100vh;
   width: 16rem;
@@ -9587,8 +9592,28 @@ a.text-dark:hover, a.text-dark:focus {
   overflow-y: auto;
 }
 
+.block--sitebranding {
+  min-width: 320px;
+  margin-right: 1em;
+}
+
+.block--sitebranding .navbar-brand {
+  justify-content: center;
+}
+
 .block--mainnavigation .nav > li.nav-item {
   margin-right: 0.5em;
+}
+
+.main___nav .nav > li.nav-item > a.nav-link {
+  font-weight: bold;
+  color: black;
+  font-size: 0.9rem;
+  border-bottom: 2px solid transparent;
+}
+
+.main___nav .nav > li.nav-item > a.nav-link.is-active {
+  border-bottom: 2px solid blue;
 }
 
 span[data-h5p-type] {
@@ -9722,7 +9747,7 @@ span[data-h5p-type="Memory Game"] {
   background-image: url("../icons/h5p/MemoryGame.svg");
 }
 
-span[data-h5p-type="Multi Choice"] {
+span[data-h5p-type="Multiple Choice"] {
   background-image: url("../icons/h5p/MultiChoice.svg");
 }
 

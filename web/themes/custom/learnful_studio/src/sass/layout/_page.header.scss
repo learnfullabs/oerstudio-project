@@ -3,3 +3,8 @@
 .page__header {
 
 }
+
+body.path-node .page__header {
+  border-bottom: $border-width solid $border-color;
+  padding: 0.5em;
+}
