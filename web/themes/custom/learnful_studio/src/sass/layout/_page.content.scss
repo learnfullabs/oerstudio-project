@@ -15,4 +15,6 @@
   width: 20rem;
   height: calc(100vh - 57.71px);
   overflow-y: auto;
+  position: sticky;
+  top: 57.71px;
 }

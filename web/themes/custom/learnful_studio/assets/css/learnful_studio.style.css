@@ -9590,6 +9590,9 @@ body.path-node .page__header {
   width: 20rem;
   height: calc(100vh - 57.71px);
   overflow-y: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 57.71px;
 }
 
 .block--sitebranding {
@@ -9643,7 +9646,7 @@ span[data-h5p-type="Audio Recorder"] {
   background-image: url("../icons/h5p/AudioRecorder.svg");
 }
 
-span[data-h5p-type=Blanks] {
+span[data-h5p-type="Fill in the Blanks"] {
   background-image: url("../icons/h5p/Blanks.svg");
 }
 
@@ -9663,11 +9666,15 @@ span[data-h5p-type=Collage] {
   background-image: url("../icons/h5p/Collage.svg");
 }
 
+span[data-h5p-type=Column] {
+  background-image: url("../icons/h5p/Column.svg");
+}
+
 span[data-h5p-type="Course Presentation"] {
   background-image: url("../icons/h5p/CoursePresentation.svg");
 }
 
-span[data-h5p-type=Dialogcards] {
+span[data-h5p-type="Dialog Cards"] {
   background-image: url("../icons/h5p/Dialogcards.svg");
 }
 
@@ -9679,7 +9686,7 @@ span[data-h5p-type="Documentation Tool"] {
   background-image: url("../icons/h5p/DocumentationTool.svg");
 }
 
-span[data-h5p-type="Drag Question"] {
+span[data-h5p-type="Drag and Drop"] {
   background-image: url("../icons/h5p/DragQuestion.svg");
 }
 
@@ -9739,7 +9746,7 @@ span[data-h5p-type="KewAr Code"] {
   background-image: url("../icons/h5p/KewArCode.svg");
 }
 
-span[data-h5p-type="Mark The Words"] {
+span[data-h5p-type="Mark the Words"] {
   background-image: url("../icons/h5p/MarkTheWords.svg");
 }
 
@@ -9756,6 +9763,10 @@ span[data-h5p-type=Questionnaire] {
 }
 
 span[data-h5p-type="Question Set"] {
+  background-image: url("../icons/h5p/QuestionSet.svg");
+}
+
+span[data-h5p-type="Single Choice Set"] {
   background-image: url("../icons/h5p/QuestionSet.svg");
 }
 
@@ -9779,7 +9790,7 @@ span[data-h5p-type=Timeline] {
   background-image: url("../icons/h5p/Timeline.svg");
 }
 
-span[data-h5p-type="True False"] {
+span[data-h5p-type="True/False Question"] {
   background-image: url("../icons/h5p/TrueFalse.svg");
 }
 
@@ -9822,6 +9833,13 @@ a.ui-button:active,
   border: 1px solid #003eff;
   background: white;
   color: #003eff;
+}
+
+/**
+ * full pager
+**/
+.views-element-container nav[role=navigation] {
+  margin-top: 2em;
 }
 
 .block--learnful-studio-page-title h1 {
