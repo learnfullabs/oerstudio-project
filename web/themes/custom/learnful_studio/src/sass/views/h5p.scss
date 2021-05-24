@@ -47,12 +47,18 @@ $h5p_types: (
 span[data-h5p-type] {
   font-size: 0;
   display: block;
-  height: 56px;
-  width: 100px;
+  height: 50px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 @each $type, $bg in $h5p_types {
   span[data-h5p-type="#{$type}"] {
     background-image: url($bg);
   }
+}
+
+.list-view h3.item-title {
+  font-size: 1.25em;
 }

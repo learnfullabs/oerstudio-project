@@ -18,3 +18,26 @@
   position: sticky;
   top: 57.71px;
 }
+
+
+// .brenham-flipped .radix-layouts-header {
+//   margin-bottom: 1rem;
+//   padding-bottom: 1.5rem;
+//   border-bottom: $border-width solid $border-color;
+// }
+
+.brenham-flipped .radix-layouts-content {
+  padding-right: 5rem;
+}
+
+
+.panel-panel-inner .field__label {
+  font-weight: lighter !important;
+  font-size: $h5-font-size;
+  color: $text-muted;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+.panel-panel-inner .field__item {
+  margin-bottom: 2.5rem;
+}

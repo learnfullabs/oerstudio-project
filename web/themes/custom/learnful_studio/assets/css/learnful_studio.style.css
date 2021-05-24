@@ -9595,6 +9595,22 @@ body.path-node .page__header {
   top: 57.71px;
 }
 
+.brenham-flipped .radix-layouts-content {
+  padding-right: 5rem;
+}
+
+.panel-panel-inner .field__label {
+  font-weight: lighter !important;
+  font-size: 1.25rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.panel-panel-inner .field__item {
+  margin-bottom: 2.5rem;
+}
+
 .block--sitebranding {
   min-width: 320px;
   margin-right: 1em;
@@ -9622,8 +9638,10 @@ body.path-node .page__header {
 span[data-h5p-type] {
   font-size: 0;
   display: block;
-  height: 56px;
-  width: 100px;
+  height: 50px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 span[data-h5p-type=Accordion] {
@@ -9796,6 +9814,10 @@ span[data-h5p-type="True/False Question"] {
 
 span[data-h5p-type="Twitter User Feed"] {
   background-image: url("../icons/h5p/TwitterUserFeed.svg");
+}
+
+.list-view h3.item-title {
+  font-size: 1.25em;
 }
 
 .views-exposed-form.block form > .form-item {
