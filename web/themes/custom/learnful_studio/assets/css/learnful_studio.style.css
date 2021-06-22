@@ -9825,9 +9825,23 @@ span[data-h5p-type="Twitter User Feed"] {
   padding-bottom: 1rem;
 }
 
+.views-exposed-form.block form > .form-item:last-of-type {
+  border-bottom: 0;
+}
+
 .views-exposed-form.block form > .form-item > label {
   text-transform: uppercase;
   font-weight: 300;
+}
+
+.sidebar__left .views-exposed-form.block form > .form-actions {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  padding: 1.5em 1em;
+  background: white;
+  border-top: 1px solid #dee2e6;
 }
 
 /**
