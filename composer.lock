@@ -4019,28 +4019,28 @@
         },
         {
             "name": "drupal/h5p",
-            "version": "1.0.0-rc17",
+            "version": "1.0.0-rc19",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/h5p.git",
-                "reference": "8.x-1.0-rc17"
+                "reference": "8.x-1.0-rc19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/h5p-8.x-1.0-rc17.zip",
-                "reference": "8.x-1.0-rc17",
-                "shasum": "16d9f920e09c082a3b3f2f2ab98902cbc85957db"
+                "url": "https://ftp.drupal.org/files/projects/h5p-8.x-1.0-rc19.zip",
+                "reference": "8.x-1.0-rc19",
+                "shasum": "de2fd25d084e6bd1764084398136544626480157"
             },
             "require": {
                 "drupal/core": "^8",
-                "h5p/h5p-core": "1.24.0",
-                "h5p/h5p-editor": "1.24.1"
+                "h5p/h5p-core": "1.24.2",
+                "h5p/h5p-editor": "1.24.3"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc17",
-                    "datestamp": "1572512585",
+                    "version": "8.x-1.0-rc19",
+                    "datestamp": "1623609967",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -5638,16 +5638,16 @@
         },
         {
             "name": "h5p/h5p-core",
-            "version": "1.24.0",
+            "version": "1.24.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/h5p/h5p-php-library.git",
-                "reference": "55b04018d7def8d2288b768adbcb3cc152fdbd53"
+                "reference": "db3da7a1441ae6c9ffacbb8110f41758c85beaa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/h5p/h5p-php-library/zipball/55b04018d7def8d2288b768adbcb3cc152fdbd53",
-                "reference": "55b04018d7def8d2288b768adbcb3cc152fdbd53",
+                "url": "https://api.github.com/repos/h5p/h5p-php-library/zipball/db3da7a1441ae6c9ffacbb8110f41758c85beaa0",
+                "reference": "db3da7a1441ae6c9ffacbb8110f41758c85beaa0",
                 "shasum": ""
             },
             "require": {
@@ -5693,22 +5693,22 @@
             ],
             "support": {
                 "issues": "https://github.com/h5p/h5p-php-library/issues",
-                "source": "https://github.com/h5p/h5p-php-library/tree/release"
+                "source": "https://github.com/h5p/h5p-php-library/tree/wp-1.15.2"
             },
-            "time": "2019-10-30T10:42:15+00:00"
+            "time": "2021-04-22T09:30:45+00:00"
         },
         {
             "name": "h5p/h5p-editor",
-            "version": "1.24.1",
+            "version": "1.24.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/h5p/h5p-editor-php-library.git",
-                "reference": "9361892a22ac6ab91e010e0b8a0a0e836f45a16a"
+                "reference": "338ae5bad572fe3d7c0a355d8ba8e24f360bb698"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/h5p/h5p-editor-php-library/zipball/9361892a22ac6ab91e010e0b8a0a0e836f45a16a",
-                "reference": "9361892a22ac6ab91e010e0b8a0a0e836f45a16a",
+                "url": "https://api.github.com/repos/h5p/h5p-editor-php-library/zipball/338ae5bad572fe3d7c0a355d8ba8e24f360bb698",
+                "reference": "338ae5bad572fe3d7c0a355d8ba8e24f360bb698",
                 "shasum": ""
             },
             "require": {
@@ -5754,9 +5754,9 @@
             ],
             "support": {
                 "issues": "https://github.com/h5p/h5p-editor-php-library/issues",
-                "source": "https://github.com/h5p/h5p-editor-php-library/tree/1.24.1"
+                "source": "https://github.com/h5p/h5p-editor-php-library/tree/1.24.3"
             },
-            "time": "2019-10-30T14:56:53+00:00"
+            "time": "2021-06-13T17:44:27+00:00"
         },
         {
             "name": "harvesthq/chosen",
