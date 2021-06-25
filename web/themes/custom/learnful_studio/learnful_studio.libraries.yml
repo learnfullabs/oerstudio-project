@@ -2,9 +2,11 @@ style:
   version: VERSION
   css:
     theme:
-      assets/css/learnful_studio.style.css: {}
+      assets/css/learnful_studio.style.css: { minified: true }
   js:
-    assets/js/learnful_studio.script.js: {}
+    'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js': { type: external }
+    'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js': { type: external }
+    assets/js/learnful_studio.script.js: { minified: true }
   dependencies:
     - core/jquery
     - core/drupal

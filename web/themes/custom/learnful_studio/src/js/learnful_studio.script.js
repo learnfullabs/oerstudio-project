@@ -1,5 +1,5 @@
-import 'popper.js';
-import 'bootstrap';
+// import 'popper.js';
+// import 'bootstrap';
 import 'simplebar';
 import 'simplebar/dist/simplebar.css';
 
@@ -9,8 +9,13 @@ import 'simplebar/dist/simplebar.css';
 
   Drupal.behaviors.enableToolTips = {
     attach: function (context) {
-      //$('[data-toggle="tooltip"]').tooltip();
-      
+      $('[data-toggle="tooltip"]').tooltip();
+    }
+  };
+
+  Drupal.behaviors.contactForms = {
+    attach: function (context) {
+      $('a.use-ajax.contact-form').attr('data-dialog-type', 'bootstrap4_modal');      
     }
   };
 

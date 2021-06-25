@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "834ce467d04bd58ea9130f7c4bf357e5",
+    "content-hash": "f292410f15010c81f49af562dd251c98",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2262,6 +2262,56 @@
             }
         },
         {
+            "name": "drupal/bootstrap4_modal",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap4_modal.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap4_modal-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "a5d70278a952a92b83947e4e1942953afed5bbc5"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1623682409",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Cristobal (vhin0210)",
+                    "homepage": "https://www.drupal.org/u/vhin0210",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "yob1224",
+                    "homepage": "https://www.drupal.org/user/3324763"
+                }
+            ],
+            "description": "Bootstrap 4 Modal",
+            "homepage": "https://www.drupal.org/project/bootstrap4_modal",
+            "support": {
+                "source": "http://cgit.drupalcode.org/bootstrap4_modal",
+                "issues": "https://drupal.org/project/issues/bootstrap4_modal"
+            }
+        },
+        {
             "name": "drupal/chosen",
             "version": "3.0.1",
             "source": {
@@ -4511,8 +4561,12 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "dsnopek",
-                    "homepage": "https://www.drupal.org/user/266527"
+                    "name": "ckng",
+                    "homepage": "https://www.drupal.org/user/16307"
+                },
+                {
+                    "name": "doxigo",
+                    "homepage": "https://www.drupal.org/user/1331334"
                 }
             ],
             "description": "Radix is a base theme for Drupal. It has Bootstrap, Sass, BrowserSync and Font Awesome built-in.",
@@ -4568,6 +4622,84 @@
             "homepage": "https://www.drupal.org/project/radix_layouts",
             "support": {
                 "source": "https://git.drupalcode.org/project/radix_layouts"
+            }
+        },
+        {
+            "name": "drupal/realname",
+            "version": "1.0.0-rc2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/realname.git",
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/realname-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "f5bd7f98fdf17ef3b7d8eb3c1f9a5c043f121354"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/token": "^1.0.0-alpha2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1548970380",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "hass",
+                    "homepage": "https://www.drupal.org/u/hass"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/266280/committers"
+                },
+                {
+                    "name": "coderintherye",
+                    "homepage": "https://www.drupal.org/user/297478"
+                },
+                {
+                    "name": "hass",
+                    "homepage": "https://www.drupal.org/user/85918"
+                },
+                {
+                    "name": "philltran",
+                    "homepage": "https://www.drupal.org/user/295397"
+                },
+                {
+                    "name": "rmiddle",
+                    "homepage": "https://www.drupal.org/user/192183"
+                },
+                {
+                    "name": "theamoeba",
+                    "homepage": "https://www.drupal.org/user/251700"
+                },
+                {
+                    "name": "tkuldeep17",
+                    "homepage": "https://www.drupal.org/user/2498278"
+                },
+                {
+                    "name": "voxpelli",
+                    "homepage": "https://www.drupal.org/user/341713"
+                }
+            ],
+            "description": "Provides token-based name displays for users.",
+            "homepage": "https://www.drupal.org/project/realname",
+            "support": {
+                "source": "https://git.drupal.org/project/realname.git",
+                "issues": "https://www.drupal.org/project/issues/realname"
             }
         },
         {
@@ -10450,7 +10582,8 @@
         "drupal/gin": 15,
         "drupal/gin_login": 5,
         "drupal/h5p": 5,
-        "drupal/private_content": 5
+        "drupal/private_content": 5,
+        "drupal/realname": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
