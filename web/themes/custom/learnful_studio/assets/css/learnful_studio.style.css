@@ -9635,6 +9635,10 @@ body.path-node .page__header {
   border-bottom: 2px solid blue;
 }
 
+.block--useraccountmenu {
+  margin-right: 3rem;
+}
+
 span[data-h5p-type] {
   font-size: 0;
   display: block;

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f292410f15010c81f49af562dd251c98",
+    "content-hash": "39b3e3913e19d3e8f047210aabc45a47",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4264,6 +4264,50 @@
             }
         },
         {
+            "name": "drupal/link_attributes",
+            "version": "1.11.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/link_attributes.git",
+                "reference": "8.x-1.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/link_attributes-8.x-1.11.zip",
+                "reference": "8.x-1.11",
+                "shasum": "ca8c7e71c38350e3784dc3d1f779d700f55df818"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.11",
+                    "datestamp": "1598323550",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Provides a widget to allow settings of link attributes for menu links.",
+            "homepage": "https://www.drupal.org/project/link_attributes",
+            "support": {
+                "source": "https://git.drupalcode.org/project/link_attributes"
+            }
+        },
+        {
             "name": "drupal/mailgun",
             "version": "1.0.0",
             "source": {
@@ -4396,6 +4440,77 @@
             "homepage": "https://www.drupal.org/project/mailsystem",
             "support": {
                 "source": "https://git.drupalcode.org/project/mailsystem"
+            }
+        },
+        {
+            "name": "drupal/menu_token",
+            "version": "1.0.0-alpha3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_token.git",
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_token-8.x-1.0-alpha3.zip",
+                "reference": "8.x-1.0-alpha3",
+                "shasum": "900549b00d9ea83474fd4bc7d77104257dba6c78"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/token": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1573517280",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/353073/committers",
+                    "role": "Developer"
+                },
+                {
+                    "name": "dealancer",
+                    "homepage": "https://www.drupal.org/user/243418"
+                },
+                {
+                    "name": "develCuy",
+                    "homepage": "https://www.drupal.org/user/125473"
+                },
+                {
+                    "name": "fubhy",
+                    "homepage": "https://www.drupal.org/user/761344"
+                },
+                {
+                    "name": "nhaarish",
+                    "homepage": "https://www.drupal.org/user/3388728"
+                },
+                {
+                    "name": "peter.draucbaher",
+                    "homepage": "https://www.drupal.org/user/2409142"
+                },
+                {
+                    "name": "ygerasimov",
+                    "homepage": "https://www.drupal.org/user/257311"
+                }
+            ],
+            "description": "Menu Token module provides tokens, that can be used in title or in path of menu items (links).",
+            "homepage": "http://drupal.org/project/menu_token",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_token",
+                "issues": "http://drupal.org/project/issues/menu_token"
             }
         },
         {
@@ -5005,6 +5120,50 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/views_conditional",
                 "issues": "https://www.drupal.org/project/issues/views_conditional"
+            }
+        },
+        {
+            "name": "drupal/views_filters_populate",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/views_filters_populate.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/views_filters_populate-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "cffa514b913bf0464cbee613956dd667b25f24e8"
+            },
+            "require": {
+                "drupal/core": "^8"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1550678285",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "hanoii",
+                    "homepage": "https://www.drupal.org/user/23157"
+                }
+            ],
+            "description": "Allows one filter to populate other filters value.",
+            "homepage": "https://www.drupal.org/project/views_filters_populate",
+            "support": {
+                "source": "https://git.drupalcode.org/project/views_filters_populate"
             }
         },
         {
@@ -10582,6 +10741,7 @@
         "drupal/gin": 15,
         "drupal/gin_login": 5,
         "drupal/h5p": 5,
+        "drupal/menu_token": 15,
         "drupal/private_content": 5,
         "drupal/realname": 5
     },
