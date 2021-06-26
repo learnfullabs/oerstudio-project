@@ -36,15 +36,6 @@ import 'simplebar/dist/simplebar.css';
     }
   }
 
-  Drupal.behaviors.accountMenu = {
-    attach: function (context, settings) {
-
-      $('.menu-item-icon.icon-add').prepend('<span class="material-icons mr-1">add_circle</span>');
-      $('.menu-item-icon.icon-avatar').prepend('<span class="material-icons mr-1">account_circle</span>');
-
-      
-    }
-  }
 
 
 })(jQuery, Drupal);
