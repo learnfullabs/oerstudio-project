@@ -1,0 +1,4 @@
+global:
+  version: 1.0
+  js:
+    lstudio-h5p.js: {}

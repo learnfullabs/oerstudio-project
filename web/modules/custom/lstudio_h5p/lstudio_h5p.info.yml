@@ -1,0 +1,6 @@
+name: LibreStudio H5P
+description: JS/CSS overrides for LibreStudio
+package: H5P
+type: module
+version: 1.0
+core: 8.x

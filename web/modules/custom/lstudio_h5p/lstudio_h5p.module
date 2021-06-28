@@ -1,0 +1,95 @@
+<?php
+
+/**
+ * Alter a library's semantics
+ *
+ * May be used to add more fields to a library, change a widget, add more allowed tags for
+ * a textfield etc
+ *
+ * @param array $semantics
+ * A libraries definition of the data the library uses
+ * @param string $machine_name
+ * The libraries machine name
+ * @param int $major_version
+ * Major version for the library
+ * @param int $minor_version
+ * Minor version fot the library
+ */
+
+// function h5p_css_overrides_h5p_semantics_alter(&$semantics, $machine_name, $major_version, $minor_version) {
+//   // In this example implementation we add <h4> as an allowed tag in H5P.Text 1.0
+//   // if ($machine_name == 'H5P.Text') {
+//   //   $semantics[0]->tags[] = 'h4';
+//   // }
+// }
+
+// function h5p_css_overrides_h5p_library_installed($libraryData, $new){
+//   \Drupal::logger('h5p_library_installed')->error($new . ": LIBRARY INSTALLED: " . json_encode($libraryData));
+// }
+
+
+// function h5p_css_overrides_h5p_filtered_params_alter(&$filteredParams){
+//   \Drupal::logger('h5p_filtered_params')->error("Alter params: " . gettype($filteredParams) . '----' . json_encode($filteredParams));
+//   $filteredParams->question = 'Question has been changed by alter hook.';
+// }
+
+/**
+ * Add styles to H5Ps
+ *
+ * @param array $styles
+ *  Array of objects with properties path and version. Version is on the form
+ *  ?ver=1.0.2 and is used as a cache buster
+ * @param array $libraries
+ *  Array of libraries indexed by the library's machineName and with an array
+ *  as value. The value has the properties majorVersion and minorVersion
+ * @param string $mode
+ *  What mode are we in? Possible values are "editor", "div", "iframe" and "external"
+ */
+
+function lstudio_h5p_h5p_styles_alter(&$styles, &$libraries, $mode) {
+  // Add special styles for all H5P Content
+  // $styles[] = (object) array(
+  //   'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-global-overrides.css',
+  //   'version' => '?ver=1',
+  // );
+
+  // $isDragQuestion = array_key_exists('H5P.DragQuestion', $libraries) ||
+  //   array_key_exists('H5PEditor.DragQuestion', $libraries);
+  // if ($isDragQuestion) {
+  //   $styles[] = (object) array(
+  //     'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-drag-question-overrides.css',
+  //     'version' => '?ver=1'
+  //   );
+  // }
+
+  // if (array_key_exists('H5P.QuestionSet', $libraries)) {
+  //   $styles[] = (object) array(
+  //     'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-question-set-overrides.css',
+  //     'version' => '?ver=1'
+  //   );
+  // }
+
+  // if (array_key_exists('H5P.InteractiveVideo', $libraries)) {
+  //   $styles[] = (object) array(
+  //     'path' => drupal_get_path('module', 'h5p_css_overrides') . '/h5p-interactive-video-overrides.css',
+  //     'version' => '?ver=1'
+  //   );
+  // }
+
+  //$libraries[] = 'h5p_css_overrides/global';
+}
+
+function lstudio_h5p_h5p_scripts_alter(&$scripts, & $libraries, $mode) {
+  // Add special styles for all H5P Content
+  $scripts[] = (object) array(
+    'path' => drupal_get_path('module', 'lstudio_h5p') . '/lstudio-h5p.js',
+    'version' => '?ver=1',
+  );
+
+  $libraries[] = 'lstudio_h5p/global';
+}
+
+
+// function h5p_css_overrides_h5p_semantics_alter(&$semantics, $machine_name, $version) {
+//   \Drupal::logger('alter-semantics-test')->error("SEMANTICS IS CALLED" . json_encode($semantics));
+// }
