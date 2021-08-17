@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "805857bdd1c78441ac6106b5878c724a",
+    "content-hash": "984637669a7f1d22b64865a2284b527b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2312,6 +2312,149 @@
             }
         },
         {
+            "name": "drupal/cas",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cas.git",
+                "reference": "8.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cas-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "a8f7689f1e610bf3d9390d5a2a97eaa6911842d1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/externalauth": "^1.2"
+            },
+            "require-dev": {
+                "drupal/cas_mock_server": "^1.0||dev-0.x"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.7",
+                    "datestamp": "1592250922",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "David Metzler",
+                    "homepage": "https://www.drupal.org/u/metzlerd",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Brian Osborne",
+                    "homepage": "https://www.drupal.org/u/bkosborne",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Tim Yale",
+                    "homepage": "https://www.drupal.org/u/yalet",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/78967/committers",
+                    "role": "contributor"
+                }
+            ],
+            "description": "Provides CAS authentication for Drupal.",
+            "homepage": "http://drupal.org/project/cas",
+            "support": {
+                "source": "https://git.drupalcode.org/project/cas",
+                "issues": "http://drupal.org/project/issues/cas",
+                "irc": "irc://irc.freenode.org/drupal-contribute"
+            }
+        },
+        {
+            "name": "drupal/cas_attributes",
+            "version": "2.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/cas_attributes.git",
+                "reference": "2.0.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/cas_attributes-2.0.0-beta3.zip",
+                "reference": "2.0.0-beta3",
+                "shasum": "e76b90f025b88e5ed43556f23ac48045fb9488b5"
+            },
+            "require": {
+                "drupal/cas": "^1.7 || ^2.0@beta",
+                "drupal/core": "^8.8 || ^9",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-beta3",
+                    "datestamp": "1617032053",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Olarin",
+                    "homepage": "https://www.drupal.org/user/334773"
+                },
+                {
+                    "name": "bfroehle",
+                    "homepage": "https://www.drupal.org/user/381391"
+                },
+                {
+                    "name": "bkosborne",
+                    "homepage": "https://www.drupal.org/user/788032"
+                },
+                {
+                    "name": "metzlerd",
+                    "homepage": "https://www.drupal.org/user/32494"
+                },
+                {
+                    "name": "redndahead",
+                    "homepage": "https://www.drupal.org/user/160320"
+                },
+                {
+                    "name": "yalet",
+                    "homepage": "https://www.drupal.org/user/2413764"
+                }
+            ],
+            "description": "Provides tokens for CAS attributes and an interface for token replacement in user account fields as well as advanced role mapping capability.",
+            "homepage": "https://www.drupal.org/project/cas_attributes",
+            "keywords": [
+                "CAS",
+                "Drupal",
+                "single sign-on"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/cas_attributes",
+                "issues": "https://www.drupal.org/project/issues/cas_attributes"
+            }
+        },
+        {
             "name": "drupal/chosen",
             "version": "3.0.1",
             "source": {
@@ -3494,6 +3637,58 @@
             }
         },
         {
+            "name": "drupal/externalauth",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/externalauth.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/externalauth-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "caea7d2d5a890adad9e6b5beaa2cf139727266d6"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1624457459",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "rgristroph",
+                    "homepage": "https://www.drupal.org/user/516442"
+                },
+                {
+                    "name": "snufkin",
+                    "homepage": "https://www.drupal.org/user/58645"
+                },
+                {
+                    "name": "svendecabooter",
+                    "homepage": "https://www.drupal.org/user/35369"
+                }
+            ],
+            "description": "Helper module to authenticate users using an external site / service and storing identification details",
+            "homepage": "https://www.drupal.org/project/externalauth",
+            "support": {
+                "source": "https://git.drupalcode.org/project/externalauth"
+            }
+        },
+        {
             "name": "drupal/field_group",
             "version": "3.1.0",
             "source": {
@@ -3631,71 +3826,6 @@
             "homepage": "https://www.drupal.org/project/flag",
             "support": {
                 "source": "https://git.drupalcode.org/project/flag"
-            }
-        },
-        {
-            "name": "drupal/flag_lists",
-            "version": "4.0.0-beta9",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/flag_lists.git",
-                "reference": "4.0.0-beta9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/flag_lists-4.0.0-beta9.zip",
-                "reference": "4.0.0-beta9",
-                "shasum": "db76e97a5c8d8d33026da958c2ede4151c945ccb"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9",
-                "drupal/flag": "^4.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "4.0.0-beta9",
-                    "datestamp": "1607420074",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "awolfey",
-                    "homepage": "https://www.drupal.org/user/277371"
-                },
-                {
-                    "name": "branana",
-                    "homepage": "https://www.drupal.org/user/758394"
-                },
-                {
-                    "name": "erikwebb",
-                    "homepage": "https://www.drupal.org/user/273404"
-                },
-                {
-                    "name": "queenvictoria",
-                    "homepage": "https://www.drupal.org/user/856454"
-                },
-                {
-                    "name": "sl27257",
-                    "homepage": "https://www.drupal.org/user/15938"
-                }
-            ],
-            "description": "Flag Lists handle collection of flags",
-            "homepage": "https://www.drupal.org/project/flag_lists",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/flag_lists",
-                "issues": "https://www.drupal.org/project/issues/flag_lists"
             }
         },
         {
@@ -10796,8 +10926,8 @@
     "stability-flags": {
         "drupal/auto_entitylabel": 10,
         "drupal/better_exposed_filters": 10,
+        "drupal/cas_attributes": 10,
         "drupal/flag": 10,
-        "drupal/flag_lists": 10,
         "drupal/gin": 15,
         "drupal/gin_login": 5,
         "drupal/h5p": 5,
