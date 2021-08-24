@@ -26,12 +26,14 @@
         "drupal/cas_attributes": "^2.0@beta",
         "drupal/chosen": "^3.0",
         "drupal/console": "~1.0",
+        "drupal/content_browser": "^1.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/domain_registration": "^1.4",
         "drupal/ds": "^3.12",
         "drupal/email_registration": "^1.1",
+        "drupal/entity_browser_table": "^1.2",
         "drupal/field_group": "^3.1",
         "drupal/flag": "^4.0@beta",
         "drupal/gin": "^3.0@alpha",
@@ -70,6 +72,9 @@
             },
             "drupal/radix": {
                 "#3067615": "https://www.drupal.org/files/issues/2019-10-23/use-global-jquery-3067615-5.patch"
+            },
+            "drupal/entity_browser_table": {
+                "#3118941": "https://www.drupal.org/files/issues/2020-09-02/entity_browser_table-3118941-4.patch"
             }
         },
         "drupal-scaffold": {
