@@ -9875,6 +9875,38 @@ a.ui-button:active,
   color: #003eff;
 }
 
+.views-exposed-form.bef-exposed-form.block details.card {
+  border: 0;
+  box-shadow: unset;
+  border-radius: unset;
+  background: unset;
+}
+
+.views-exposed-form.bef-exposed-form.block details.card > summary.card-header {
+  list-style: none;
+  border-bottom: 1px solid #dee2e6;
+  background: unset;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.views-exposed-form.bef-exposed-form.block details.card > summary.card-header::after {
+  font-family: "Material Icons";
+  content: "expand_more";
+  font-size: 1.5em;
+}
+
+details.card[open] .card-header::after {
+  content: "expand_less" !important;
+}
+
+summary.card-header:hover,
+summary.card-header:focus {
+  color: #6c757d;
+}
+
 /**
  * full pager
 **/

@@ -36,6 +36,45 @@ import 'simplebar/dist/simplebar.css';
     }
   }
 
+  Drupal.behaviors.exposedFilters = {
+    attach: function(context) {
+      // Remove TID's onload.
+      Drupal.exposedFilters.remove_tid();
+
+      // Remove TID's onchange.
+      jQuery('body').find('.form-autocomplete').on('autocompleteclose', function() {
+        Drupal.exposedFilters.remove_tid();
+      });
+
+      // Add descriptions for certain exposed filters
+      Drupal.exposedFilters.add_descriptions();
+
+    }
+  };
+
+  Drupal.exposedFilters = {
+    remove_tid: function () {
+      var field_autocomplete = jQuery('body').find('.form-autocomplete');
+      field_autocomplete.each(function (event, node) {
+        var val = $(this).val();
+        var match = val.match(/\((.*?)\)$/);
+        if (match) {
+          $(this).data('real-value', val);
+          $(this).val(val.replace(' ' + match[0], ''));
+        }
+      });
+    },
+
+    add_descriptions: function () {
+      var collFilters = $('form[action="/browse/collections"]');
+
+      $('details[data-drupal-selector="edit-tags-collapsible"] .card-body', collFilters).append('<p class="small text-muted">Enter multiple tags separated by commas to search for more than 1 tag.</p>');
+
+      $('details[data-drupal-selector="edit-key-collapsible"] .card-body', collFilters).append('<p class="small text-muted">Search titles and descriptions using a keyword.</p>');
+    }
+
+  };
+
 
 
 })(jQuery, Drupal);
