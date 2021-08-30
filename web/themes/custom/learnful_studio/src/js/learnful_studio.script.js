@@ -67,10 +67,21 @@ import 'simplebar/dist/simplebar.css';
 
     add_descriptions: function () {
       var collFilters = $('form[action="/browse/collections"]');
+      var h5pFilters = $('form[action="/library"]');
 
       $('details[data-drupal-selector="edit-tags-collapsible"] .card-body', collFilters).append('<p class="small text-muted">Enter multiple tags separated by commas to search for more than 1 tag.</p>');
 
       $('details[data-drupal-selector="edit-key-collapsible"] .card-body', collFilters).append('<p class="small text-muted">Search titles and descriptions using a keyword.</p>');
+
+      $('details[data-drupal-selector="edit-type-collapsible"] .card-body', h5pFilters).append('<p class="small text-muted">Search by H5P Content Type. Example: "Interactive Video". Start typing at least 3 letters for autocomplete options. You can review a list of content types available on <a href="https://h5p.org/content-types-and-applications" target="_blank">h5p.org</a>.</p>');
+
+      $('details[data-drupal-selector="edit-key-collapsible"] .card-body', h5pFilters).append('<p class="small text-muted">Use a keyword to search titles, descriptions, author names, licenses, and other fields. Begin typing at least 3 letters for autocomplete options.</p>');
+
+      $('details[data-drupal-selector="edit-tags-collapsible"] .card-body', h5pFilters).append('<p class="small text-muted">Enter multiple tags separated by commas to search for more than 1 tag.</p>');
+      
+      $('details[data-drupal-selector="edit-auth-collapsible"] .card-body', h5pFilters).append('<p class="small text-muted">Search by author name. Must be an exact match for results.</p>');
+
+
     }
 
   };

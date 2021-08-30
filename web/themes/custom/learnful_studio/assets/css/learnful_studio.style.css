@@ -9907,6 +9907,19 @@ summary.card-header:focus {
   color: #6c757d;
 }
 
+a.bef-toggle {
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+ul.ui-autocomplete > li > a {
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 /**
  * full pager
 **/

@@ -78,3 +78,16 @@ summary.card-header:hover,
 summary.card-header:focus {
   color: $secondary;
 }
+
+a.bef-toggle {
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+ul.ui-autocomplete > li > a {
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
