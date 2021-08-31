@@ -1,10 +1,17 @@
-.block--sitebranding {
-  min-width: 320px;
-  margin-right: 1em;
+@include media-breakpoint-up(xs) { 
+
 }
-.block--sitebranding .navbar-brand {
-  justify-content: center;
+@include media-breakpoint-up(md) { 
+  .block--sitebranding {
+    min-width: 320px;
+    margin-right: 1em;
+  }
+  .block--sitebranding .navbar-brand {
+    justify-content: center;
+  }
+  
 }
+
 
 .block--mainnavigation .nav > li.nav-item {
   margin-right: 0.5em

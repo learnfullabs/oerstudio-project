@@ -36,6 +36,26 @@ import 'simplebar/dist/simplebar.css';
     }
   }
 
+  Drupal.behaviors.responsiveElements = {
+    attach: function (context) {
+      
+      // Toggle Views Filters Block on Mobile
+      Drupal.responsiveElements.toggle_filters_library();
+      
+    }
+  };
+
+  Drupal.responsiveElements = {
+    toggle_filters_library: function () {
+      var toggleBtn = $('a#toggle-filters-mobile');
+      toggleBtn.on('click', function () {
+        $("#sidebar_left").toggleClass('open');
+        $('body').toggleClass('no_scroll');
+      });
+    }
+  };
+
+
   Drupal.behaviors.exposedFilters = {
     attach: function(context) {
       // Remove TID's onload.

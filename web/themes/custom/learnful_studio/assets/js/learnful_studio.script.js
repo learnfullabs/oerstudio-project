@@ -8248,6 +8248,21 @@ __webpack_require__.r(__webpack_exports__);
       $('.dashboard-h5p #edit-key').attr('placeholder', 'Search by keyword. Hit [enter] to search.');
     }
   };
+  Drupal.behaviors.responsiveElements = {
+    attach: function attach(context) {
+      // Toggle Views Filters Block on Mobile
+      Drupal.responsiveElements.toggle_filters_library();
+    }
+  };
+  Drupal.responsiveElements = {
+    toggle_filters_library: function toggle_filters_library() {
+      var toggleBtn = $('a#toggle-filters-mobile');
+      toggleBtn.on('click', function () {
+        $("#sidebar_left").toggleClass('open');
+        $('body').toggleClass('no_scroll');
+      });
+    }
+  };
   Drupal.behaviors.exposedFilters = {
     attach: function attach(context) {
       // Remove TID's onload.

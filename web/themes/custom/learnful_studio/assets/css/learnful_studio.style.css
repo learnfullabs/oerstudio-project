@@ -609,7 +609,7 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 90%;
   }
 }
 @media (min-width: 992px) {
@@ -9580,6 +9580,10 @@ body.path-node .page__header {
   padding: 0.5em;
 }
 
+body.no_scroll {
+  overflow: hidden;
+}
+
 #outer_sidebar_left {
   height: 100vh;
   width: 16rem;
@@ -9587,14 +9591,32 @@ body.path-node .page__header {
 
 #sidebar_left,
 #sidebar_right {
-  width: 20rem;
-  height: calc(100vh - 57.71px);
+  width: 100%;
+  height: 100vh;
   overflow-y: auto;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 57.71px;
+  position: fixed;
+  top: 0;
+  left: -100%;
 }
 
+#sidebar_left.open {
+  left: 0;
+  background-color: white;
+  z-index: 9999;
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  #sidebar_left,
+#sidebar_right {
+    width: 20rem;
+    height: calc(100vh - 57.71px);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 57.71px;
+    left: 0;
+  }
+}
 .brenham-flipped .radix-layouts-content {
   padding-right: 5rem;
 }
@@ -9611,15 +9633,16 @@ body.path-node .page__header {
   margin-bottom: 2.5rem;
 }
 
-.block--sitebranding {
-  min-width: 320px;
-  margin-right: 1em;
-}
+@media (min-width: 768px) {
+  .block--sitebranding {
+    min-width: 320px;
+    margin-right: 1em;
+  }
 
-.block--sitebranding .navbar-brand {
-  justify-content: center;
+  .block--sitebranding .navbar-brand {
+    justify-content: center;
+  }
 }
-
 .block--mainnavigation .nav > li.nav-item {
   margin-right: 0.5em;
 }
