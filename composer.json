@@ -36,6 +36,7 @@
         "drupal/entity_browser_table": "^1.2",
         "drupal/field_group": "^3.1",
         "drupal/flag": "^4.0@beta",
+        "drupal/flood_control": "^2.2",
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_login": "^1.0@RC",
         "drupal/google_analytics": "^3.1",
