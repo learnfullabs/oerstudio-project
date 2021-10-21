@@ -4,6 +4,13 @@
 // @include media-breakpoint-up(lg) { ... }
 // @include media-breakpoint-up(xl) { ... }
 
+// Main Layout
+// -----------------------------------------------------------------------------
+.flex-fill-two-col {
+  flex: 1 0 !important
+}
+
+
 // Page: Content
 // -----------------------------------------------------------------------------
 
@@ -43,6 +50,9 @@ body.no_scroll {
     top: 57.71px;
     left: 0;
   }
+  #sidebar_left.open {
+    background-color: unset;
+  }
 }
 
 
@@ -53,9 +63,9 @@ body.no_scroll {
 //   border-bottom: $border-width solid $border-color;
 // }
 
-.brenham-flipped .radix-layouts-content {
-  padding-right: 5rem;
-}
+// .brenham-flipped .radix-layouts-content {
+//   padding-right: 5rem;
+// }
 
 
 .panel-panel-inner .field__label {

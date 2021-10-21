@@ -1997,17 +1997,17 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "3.0.1",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "3.0.1"
+                "reference": "3.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.0.1.zip",
-                "reference": "3.0.1",
-                "shasum": "e25ca22db1317174a7fba4734c0412293b573f43"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.0.3.zip",
+                "reference": "3.0.3",
+                "shasum": "ce735c931c0bd6da79bd8e45ca459d61015bbe44"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0"
@@ -2018,8 +2018,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.1",
-                    "datestamp": "1622644077",
+                    "version": "3.0.3",
+                    "datestamp": "1632322497",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2195,17 +2195,17 @@
         },
         {
             "name": "drupal/better_exposed_filters",
-            "version": "5.0.0-beta1",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/better_exposed_filters.git",
-                "reference": "8.x-5.0-beta1"
+                "reference": "8.x-5.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-5.0-beta1.zip",
-                "reference": "8.x-5.0-beta1",
-                "shasum": "bc5ce873fa699ee584fdeb2fd28ad6c5cb456b03"
+                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-5.0.zip",
+                "reference": "8.x-5.0",
+                "shasum": "ef575591af202b5c6867841ce58e1f447455e502"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -2217,17 +2217,17 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.0-beta1",
-                    "datestamp": "1594141892",
+                    "version": "8.x-5.0",
+                    "datestamp": "1634748760",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2239,8 +2239,8 @@
                     "homepage": "https://www.drupal.org/u/etroid"
                 },
                 {
-                    "name": "chr.fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716"
+                    "name": "Neslee Canil Pinto",
+                    "homepage": "https://www.drupal.org/u/neslee-canil-pinto"
                 },
                 {
                     "name": "jkopel",
@@ -2264,17 +2264,17 @@
         },
         {
             "name": "drupal/bootstrap4_modal",
-            "version": "2.1.0",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bootstrap4_modal.git",
-                "reference": "2.1.0"
+                "reference": "2.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bootstrap4_modal-2.1.0.zip",
-                "reference": "2.1.0",
-                "shasum": "a5d70278a952a92b83947e4e1942953afed5bbc5"
+                "url": "https://ftp.drupal.org/files/projects/bootstrap4_modal-2.1.2.zip",
+                "reference": "2.1.2",
+                "shasum": "5e4a16e09d3d12a7923343601f0b9ace515acf65"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -2282,8 +2282,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.0",
-                    "datestamp": "1623682409",
+                    "version": "2.1.2",
+                    "datestamp": "1628003446",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

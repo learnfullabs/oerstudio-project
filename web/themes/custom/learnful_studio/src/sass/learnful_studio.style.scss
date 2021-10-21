@@ -53,6 +53,14 @@
 // -----------------------------------------------------------------------------
 @import "nav/mainnav";
 
+// Content
+// -----------------------------------------------------------------------------
+@import "content/node.h5p";
+@import "content/node.page";
+@import "content/node.article";
+@import "content/page.title";
+@import "content/user.profile";
+
 // Views
 // -----------------------------------------------------------------------------
 @import "views/h5p";
@@ -67,7 +75,4 @@
 // Other
 // -----------------------------------------------------------------------------
 @import "block/block";
-@import "content/node.page";
-@import "content/node.article";
-@import "content/page.title";
-@import "content/user.profile";
+

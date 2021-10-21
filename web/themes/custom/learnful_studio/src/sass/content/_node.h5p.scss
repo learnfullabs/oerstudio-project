@@ -1,5 +1,23 @@
+// @include media-breakpoint-up(xs) { ... }
+// @include media-breakpoint-up(sm) { ... }
+// @include media-breakpoint-up(md) { ... }
+// @include media-breakpoint-up(lg) { ... }
+// @include media-breakpoint-up(xl) { ... }
+
 // H5P
 // -----------------------------------------------------------------------------
 
-$target: "body.page-node-type-h5p";
 
+
+@include media-breakpoint-up(xs) {
+  .h5p-node-page .w-75 {
+    width: 100% !important;
+  }
+}
+
+
+@include media-breakpoint-up(xl) {
+  .h5p-node-page .w-75 {
+    width: 75% !important;
+  }
+}

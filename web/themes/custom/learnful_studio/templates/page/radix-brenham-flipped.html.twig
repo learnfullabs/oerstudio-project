@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Template for Radix Brenham Flipped.
+ *
+ * Variables:
+ * - $css_id: An optional CSS id to use for the layout.
+ * - $content: An array of content, each item in the array is keyed to one
+ * panel of the layout. This layout supports the following sections:
+ */
+#}
+{%
+    set container_classes = [
+    'panel-display',
+    'brenham-flipped',
+    'clearfix'
+]
+%}
+{% if classes %}
+    {% set container_classes = container_classes|merge(classes) %}
+{% endif %}
+{% if class %}
+    {% set container_classes = container_classes|merge(class) %}
+{% endif %}
+
+
+<div {{ attributes.addClass(container_classes) }}{% if css_id %}{{ css_id }}{% endif %}>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 radix-layouts-header panel-panel">
+        <div {{ region_attributes.header.addClass('panel-panel-inner') }}>
+          {{ content.header }}
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-8 pr-0 pr-md-4 pr-lg-5 radix-layouts-content panel-panel">
+        <div {{ region_attributes.contentmain.addClass('panel-panel-inner') }}>
+          {{ content.contentmain }}
+        </div>
+      </div>
+      <div class="col-12 col-md-4 mt-4 mt-md-0 radix-layouts-sidebar panel-panel">
+        <div {{ region_attributes.sidebar.addClass('panel-panel-inner') }}>
+          {{ content.sidebar }}
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</div><!-- /.brenham-flipped -->
