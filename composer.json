@@ -25,6 +25,7 @@
         "drupal/cas": "^1.7",
         "drupal/cas_attributes": "^2.0@beta",
         "drupal/chosen": "^3.0",
+        "drupal/config_partial_export": "^1.6",
         "drupal/console": "~1.0",
         "drupal/content_browser": "^1.0",
         "drupal/core-composer-scaffold": "^8.8",

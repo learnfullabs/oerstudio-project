@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "340d78c1f1f479cf9e7ca0c2da6ac498",
+    "content-hash": "7a78a68fdce5df5ee6bf4f072ba0e257",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2657,6 +2657,67 @@
             "homepage": "https://drupal.org/project/components",
             "support": {
                 "source": "https://git.drupalcode.org/project/components"
+            }
+        },
+        {
+            "name": "drupal/config_partial_export",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/config_partial_export.git",
+                "reference": "8.x-1.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/config_partial_export-8.x-1.6.zip",
+                "reference": "8.x-1.6",
+                "shasum": "ae47bb4c427067731e6aaf0918baa53d650b7a3a"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.6",
+                    "datestamp": "1583832593",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "László Kovács",
+                    "homepage": "https://www.drupal.org/u/laszlokovacs",
+                    "role": "Original author"
+                },
+                {
+                    "name": "Balu Ertl",
+                    "homepage": "https://www.drupal.org/u/balu-ertl",
+                    "role": "Current maintainer"
+                },
+                {
+                    "name": "segi",
+                    "homepage": "https://www.drupal.org/user/1421432"
+                }
+            ],
+            "description": "Partial export of modified configuration files.",
+            "homepage": "https://www.drupal.org/project/config_partial_export",
+            "keywords": [
+                "configuration",
+                "development",
+                "export"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/config_partial_export",
+                "issues": "https://www.drupal.org/project/issues/config_partial_export",
+                "docs": "https://www.drupal.org/docs/8/modules/config-partial-export"
             }
         },
         {
