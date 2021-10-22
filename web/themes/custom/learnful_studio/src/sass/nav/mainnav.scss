@@ -1,6 +1,4 @@
-@include media-breakpoint-up(xs) { 
 
-}
 @include media-breakpoint-up(md) { 
   .block--sitebranding {
     min-width: 320px;
@@ -24,8 +22,16 @@
   border-bottom: 2px solid transparent;
 }
 
+
+
 .main___nav .nav > li.nav-item > a.nav-link.is-active {
-  border-bottom: 2px solid blue;
+  color: $primary;
+}
+
+@include media-breakpoint-up(md) { 
+  .main___nav .nav > li.nav-item > a.nav-link.is-active { 
+    border-bottom: 2px solid $primary;
+  }
 }
 
 .block--useraccountmenu {

@@ -9659,9 +9659,14 @@ body.no_scroll {
 }
 
 .main___nav .nav > li.nav-item > a.nav-link.is-active {
-  border-bottom: 2px solid blue;
+  color: #007bff;
 }
 
+@media (min-width: 768px) {
+  .main___nav .nav > li.nav-item > a.nav-link.is-active {
+    border-bottom: 2px solid #007bff;
+  }
+}
 .block--useraccountmenu {
   margin-right: 3rem;
 }
