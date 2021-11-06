@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7a78a68fdce5df5ee6bf4f072ba0e257",
+    "content-hash": "b41f3d64453d8d476eee543e0a058a12",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4267,6 +4267,50 @@
             "homepage": "https://www.drupal.org/project/flood_control",
             "support": {
                 "source": "https://git.drupalcode.org/project/flood_control"
+            }
+        },
+        {
+            "name": "drupal/form_display_field_machine_name",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/form_display_field_machine_name.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/form_display_field_machine_name-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "1ee13e6da317913f56a8c86dd2a18cbca2b5cd45"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1600958657",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "phthlaap",
+                    "homepage": "https://www.drupal.org/user/3579545"
+                }
+            ],
+            "description": "This module support to show field machine name in form display.",
+            "homepage": "https://www.drupal.org/project/form_display_field_machine_name",
+            "support": {
+                "source": "https://git.drupalcode.org/project/form_display_field_machine_name"
             }
         },
         {
