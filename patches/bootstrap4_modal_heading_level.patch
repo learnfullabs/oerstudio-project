@@ -1,0 +1,13 @@
+diff --git a/js/bs4_modal.dialog.js b/js/bs4_modal.dialog.js
+index c78a52a..1c43f04 100644
+--- a/js/bs4_modal.dialog.js
++++ b/js/bs4_modal.dialog.js
+@@ -43,7 +43,7 @@
+       if (settingIsTrue(settings.dialogShowHeader)) {
+         var modalHeader = '<div class="modal-header">';
+         if (settingIsTrue(settings.dialogShowHeaderTitle)) {
+-          modalHeader += '<h5 class="modal-title">' + settings.title + '</h5>';
++          modalHeader += '<h1 class="modal-title">' + settings.title + '</h1>';
+         }
+ 
+         var version = 0;

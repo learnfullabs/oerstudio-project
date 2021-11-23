@@ -78,6 +78,9 @@
             },
             "drupal/entity_browser_table": {
                 "#3118941": "https://www.drupal.org/files/issues/2020-09-02/entity_browser_table-3118941-4.patch"
+            },
+            "drupal/bootstrap4_modal": {
+                "change heading level for accessibility": "patches/bootstrap4_modal_heading_level.patch"
             }
         },
         "drupal-scaffold": {

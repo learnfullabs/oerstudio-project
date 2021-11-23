@@ -9584,6 +9584,11 @@ body.path-node .page__header {
   flex: 1 0 !important;
 }
 
+@media (min-width: 992px) {
+  .modal-dialog {
+    max-width: 960px;
+  }
+}
 body.no_scroll {
   overflow: hidden;
 }
@@ -9713,6 +9718,10 @@ span[data-h5p-type=Agamotto] {
 
 span[data-h5p-type="Arithmetic Quiz"] {
   background-image: url("../icons/h5p/ArithmeticQuiz.svg");
+}
+
+span[data-h5p-type=Audio] {
+  background-image: url("../icons/h5p/Audio.svg");
 }
 
 span[data-h5p-type="Audio Recorder"] {
