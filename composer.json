@@ -12,6 +12,19 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "learnfullabs/oerstudio-profile",
+                "version": "2.0",
+                "type":"drupal-custom-profile",
+                "source": {
+                    "url": "https://github.com/learnfullabs/oerstudio-profile.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         }
     ],
     "require": {
@@ -26,11 +39,13 @@
         "drupal/cas_attributes": "^2.0@beta",
         "drupal/chosen": "^3.0",
         "drupal/config_partial_export": "^1.6",
+        "drupal/config_suite": "^2.0",
         "drupal/console": "~1.0",
         "drupal/content_browser": "^1.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/default_content": "^2.0@alpha",
         "drupal/domain_registration": "^1.4",
         "drupal/ds": "^3.12",
         "drupal/email_registration": "^1.1",
@@ -58,7 +73,8 @@
         "drupal/views_conditional": "^1.2",
         "drupal/views_field_view": "^1.0@beta",
         "drupal/views_filters_populate": "^1.1",
-        "drush/drush": "^10.3"
+        "drush/drush": "^10.3",
+        "learnfullabs/oerstudio-profile": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -112,6 +128,9 @@
             ],
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
+            ],
+            "web/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
             ]
         },
         "drupal-core-project-message": {
