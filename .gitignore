@@ -8,7 +8,7 @@
 /web/themes/contrib/
 /web/profiles/contrib/
 /web/profiles/custom/
-/web/libraries/
+#/web/libraries/
 
 # Ignore all site specific data
 /web/sites/*
