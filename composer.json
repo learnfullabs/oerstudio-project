@@ -67,6 +67,7 @@
         "drupal/radix_layouts": "^4.1",
         "drupal/realname": "^1.0@RC",
         "drupal/regcode_simple": "^1.4",
+        "drupal/smtp": "^1.0",
         "drupal/taxonomy_manager": "^2.0",
         "drupal/token": "^1.9",
         "drupal/views_autocomplete_filters": "^1.3",
